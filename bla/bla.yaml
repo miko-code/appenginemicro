@@ -1,0 +1,17 @@
+application: ramimiki-1310 
+version: alpha-001
+module: bla
+threadsafe: true
+runtime: go
+api_version: go1
+
+
+handlers:
+
+
+# Endpoints handler
+- url: /bla
+  script: _go_app
+
+
+

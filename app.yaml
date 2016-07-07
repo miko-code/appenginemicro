@@ -1,0 +1,23 @@
+application: ramimiki-1310 
+version: alpha-001
+module: default
+threadsafe: true
+runtime: go
+api_version: go1
+
+
+handlers:
+
+# web handlers
+- url: /web/static/(.*)
+  static_files: /web/static/\1
+  upload: /web/static/.*
+
+- url: /admin/.*
+  script: _go_app
+  login: admin
+
+# Endpoints handler
+- url: /.*
+  script: _go_app
+

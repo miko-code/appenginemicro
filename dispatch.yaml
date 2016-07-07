@@ -1,0 +1,12 @@
+--- 
+application: ramimiki-1310
+
+dispatch:
+  - url: "*/"
+    module: default
+ 
+  - url: "*/bla"
+    module: bla
+  
+  - url: "*/kaka"
+    module: kaka
